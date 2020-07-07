@@ -33,6 +33,10 @@ Yada url olarak verilen bir görseli sıkıştırıp istediğiniz klasöre aktar
 	$source = \Tinify\fromUrl("https://tinypng.com/images/panda-happy.png");
 	$source->toFile("optimized.jpg");
 	
+Aylık işlem miktarınızı aşağıdaki kod satırı ile basabilirsiniz.
+	
+	$compressionsThisMonth = \Tinify\compressionCount();
+	
 Daha fazla ayrıntı için aşağıdaki bağlantıyı ziyaret edin.
 
 	https://tinypng.com/developers/reference/php
