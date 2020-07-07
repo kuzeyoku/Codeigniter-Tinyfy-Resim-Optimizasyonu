@@ -1,5 +1,6 @@
 # Codeigniter-Tinyfy-Resim-Optimizasyonu
 Tinyfy apisi kullanarak resimlerinizi %80 oranında sıkıştırarak önemli ölçüde boyut tasarrufu sağlayabilirsiniz.
+Öncelik api ücretsiz olarak ayda 500 resim üzerinde işlem yapar daha fazlası için ücret ödemeniz gerekir. Aylık 500 adet işlem işinizi görecektir.
 
 # Api Key Oluşturma
 Aşağıdaki bağlantıdan İsim Soyisim ve email bilgilerinizi girerek api anahtarı oluşturmalısınız.
