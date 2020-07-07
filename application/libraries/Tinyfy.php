@@ -27,10 +27,8 @@ class Tinyfy
 			echo "Tinify API HATALI";
 		}
 
-		$process = \Tinify\fromFile($image);
-		$process->toFile($image);
-
-		return $process;
+		$compress = \Tinify\fromFile($image);
+		$compress->toFile($image);
 	}
 
 }
