@@ -32,6 +32,10 @@ Yada url olarak verilen bir görseli sıkıştırıp istediğiniz klasöre aktar
 	$source = \Tinify\fromUrl("https://tinypng.com/images/panda-happy.png");
 	$source->toFile("optimized.jpg");
 	
+Daha fazla ayrıntı için aşağıdaki bağlantıyı ziyaret edin.
+
+	https://tinypng.com/developers/reference/php
+	
 # Sonuç
 Oluşturduğumuz kütüphaneyi ister controllerda istersekte helper içerisinde fonksiyon oluşturarak kullanabiliriz. Controllerda kullanımı aşağıdaki gibidir.
 
