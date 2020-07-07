@@ -2,15 +2,10 @@
 
 class Tinyfy
 {
-	protected $ci;
-
-	public function __construct()
-	{
-		$this->ci =& get_instance();
-	}
 
 	public function compress($image)
 	{
+		$CI =& get_instance();
 		require_once("lib/Tinify/Exception.php");
 		require_once("lib/Tinify/ResultMeta.php");
 		require_once("lib/Tinify/Result.php");
@@ -20,15 +15,15 @@ class Tinyfy
 
 		try {
 
-			\Tinify\setKey($CI->config->item(tinyfy_api));
-			\Tinify\validate();
+			\Tinify\setKey($CI->config->item("tinyfy_api"));
+			$validate = \Tinify\validate();
+			if ($validate == TRUE) {
+				\Tinify\fromFile($image)->toFile($image);
+			}
 
 		} catch (\Tinify\Exception $e) {
 			echo "Tinify API HATALI";
 		}
-
-		$compress = \Tinify\fromFile($image);
-		$compress->toFile($image);
 	}
 
 }
