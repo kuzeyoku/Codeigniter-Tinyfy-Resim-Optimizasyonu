@@ -24,7 +24,7 @@ Oluşturduğumuz kütüphaneyi ister controllerda istersekte helper içerisinde 
 			public function __construct()
 			{
 				parent::__construct();
-				$this->load->library("tinyfy"); //Kütüphaneyi çağıtdık
+				$this->load->library("tinyfy"); //Kütüphaneyi çağırdık
 			}
 
 			public function index()
