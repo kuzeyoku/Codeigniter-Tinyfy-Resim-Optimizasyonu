@@ -1,1 +1,1 @@
-$config["tinyfy_api"] = "#apikey";
+$config["tinyfy_api"] = "Size verilen api anahtarı";
