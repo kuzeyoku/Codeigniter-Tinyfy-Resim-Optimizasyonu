@@ -13,7 +13,14 @@ Kşağıdaki kodlar config.php dosyasının en altına eklenir. Bu kodları iste
 
 # Library
 Application/libraries altında ki dosyaları aynı dizine ekliyoruz. Tinyfy.php içeriğinde açıklamalar eklenmiştir..
-
+Kütüphane sadece resim sıkıştırma olarak çalışmıyor. Kullanabileceğiniz birçok özelleştirmede mevcut.
+	$source = \Tinify\fromFile("large.jpg");
+$resized = $source->resize(array(
+    "method" => "fit",
+    "width" => 150,
+    "height" => 100
+));
+$resized->toFile("thumbnail.jpg");
 # Sonuç
 Oluşturduğumuz kütüphaneyi ister controllerda istersekte helper içerisinde fonksiyon oluşturarak kullanabiliriz. Controllerda kullanımı aşağıdaki gibidir.
 
