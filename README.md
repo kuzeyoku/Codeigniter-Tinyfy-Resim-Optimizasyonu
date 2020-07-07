@@ -11,10 +11,10 @@ Kşağıdaki kodlar config.php dosyasının en altına eklenir. Bu kodları iste
 
 	$config["tinyfy_api"] = 'Size verilen api anahtarı';
 
-#Library
+# Library
 Application/libraries altında ki dosyaları aynı dizine ekliyoruz. Tinyfy.php içeriğinde açıklamalar eklenmiştir..
 
-#Sonuç
+# Sonuç
 Oluşturduğumuz kütüphaneyi ister controllerda istersekte helper içerisinde fonksiyon oluşturarak kullanabiliriz. Controllerda kullanımı aşağıdaki gibidir.
 
 	<?php defined('BASEPATH') OR exit('No direct script access allowed');
