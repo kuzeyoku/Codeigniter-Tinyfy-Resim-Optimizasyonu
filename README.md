@@ -16,21 +16,3 @@ Application/libraries altında ki dosyaları aynı dizine ekliyoruz. Tinyfy.php 
 
 # Sonuç
 Oluşturduğumuz kütüphaneyi ister controllerda istersekte helper içerisinde fonksiyon oluşturarak kullanabiliriz. Controllerda kullanımı aşağıdaki gibidir.
-
-	<?php defined('BASEPATH') OR exit('No direct script access allowed');
-
-		class Tinyfy extends CI_Controller {
-
-			public function __construct()
-			{
-				parent::__construct();
-				$this->load->library("tinyfy"); //Kütüphaneyi çağırdık
-			}
-
-			public function index()
-			{
-				$this->tinyfy->compress(FCPATH."image/test/image.jpeg"); //Sıkıştırılacak resmin tam dizinini parametre olarak gönderdik.
-			}
-			
-		}
-	?>
